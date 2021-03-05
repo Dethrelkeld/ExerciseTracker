@@ -31,20 +31,28 @@ router.put("/api/workouts/:id", (req, res) => {
 // get request to get last workout
 router.get("/api/workouts/", (req, res) => {
     Workout.find({})
-        .then(data => {
+        .then((data) => {
             res.json(data);
         })
         .catch(err => {
             res.status(400).json(err);
+            console.log(err);
         });
 });
 
 // get request to get all workouts
 router.get("/api/workouts/range", (req, res) => {
-    Workout.
-});
+    db.Workout.find({})
+      .then((data) => {
+        res.json(data);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+        console.log(err);
+      });
+  });
 
-// find aggregate method from mongoose docs
+
 
 // delete to delete a workout
 router.delete("/api/workouts/:id", (req, res) => {
