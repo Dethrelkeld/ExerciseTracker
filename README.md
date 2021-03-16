@@ -2,4 +2,4 @@
 
 https://agile-savannah-12907.herokuapp.com/stats
 
-![gif of website]"./FitnessTracker.png"
+![gif of website](./FitnessTracker.gif "fitnessTrackerGif")
